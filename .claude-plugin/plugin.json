@@ -1,0 +1,21 @@
+{
+  "name": "ocean-surf",
+  "version": "0.2.0",
+  "description": "Sea and surf look for the Claude desktop app: an ocean palette in light and dark, and an animated beach scene behind the conversation that follows the real sun (day, golden hour, night).",
+  "author": { "name": "Briac-alt" },
+  "license": "MIT",
+  "userConfig": {
+    "latitude": {
+      "type": "number",
+      "title": "Latitude",
+      "description": "Where the sun is computed for the day, golden hour and night scenes, in degrees (-90 to 90). Default: Paris.",
+      "default": 48.857
+    },
+    "longitude": {
+      "type": "number",
+      "title": "Longitude",
+      "description": "Where the sun is computed, in degrees east (-180 to 180; west is negative). Default: Paris.",
+      "default": 2.352
+    }
+  }
+}

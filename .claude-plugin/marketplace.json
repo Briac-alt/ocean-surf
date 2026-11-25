@@ -1,0 +1,11 @@
+{
+  "name": "ocean-surf",
+  "owner": { "name": "Briac-alt" },
+  "plugins": [
+    {
+      "name": "ocean-surf",
+      "source": "./",
+      "description": "Sea and surf look for the Claude desktop app: ocean palette and an animated beach that follows the real sun."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<style>
+.sky1{stop-color:#6fbfdf}.sky2{stop-color:#a9dcea}.sky3{stop-color:#e8f7f5}
+.orb{fill:#fff1c9}
+.h1{stop-color:#fff4d6;stop-opacity:0.75}.h2{stop-color:#fff4d6;stop-opacity:0}
+.glow{opacity:.75;animation:glow 9s ease-in-out infinite alternate}
+.star{fill:#e6eef0;opacity:.8}
+.sea{fill:#4fa9c0}
+.w1{fill:#3e96ae}.w2{fill:#2b819a}.w3{fill:#1f708a}
+.foam{fill:none;stroke:#f6fcfc;stroke-width:5;stroke-linecap:round;opacity:0.75}
+.thin{stroke-width:3;opacity:0.49}
+.sheet{fill:#f6fcfc;opacity:0.41}
+.lace{fill:none;stroke:#f6fcfc;stroke-width:4;stroke-linecap:round;opacity:0.75}
+.glint{fill:#fff8e1;opacity:0.55;animation:glint 6s ease-in-out infinite alternate}
+.wet{fill:#cdb68c}.sand{fill:#eddcb4}.dune{fill:#e4cf9f}
+.grass{fill:none;stroke:#7b8d4a;stroke-width:3;stroke-linecap:round}
+.planted{fill:#f07f4f}.stripe{fill:none;stroke:#fff3e0;stroke-width:3;stroke-linecap:round}
+.gull{fill:none;stroke:#2c4852;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.limb{fill:none;stroke:#0c2630;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.head{fill:#0c2630}
+.board{fill:#f6efe0;stroke:#0c2630;stroke-width:2}
+.d1{animation:drift1 96s linear infinite}
+.d2{animation:drift2 44s linear infinite}
+.d3{animation:drift3 30s linear infinite}
+.b1{animation:bob 13s ease-in-out infinite alternate}
+.b3{animation:bob 9s ease-in-out infinite alternate}
+.ride{animation:ride 11s cubic-bezier(.37,0,.63,1) infinite alternate}
+.swash{animation:swash 7s ease-in-out infinite alternate}
+.sway{transform-box:fill-box;transform-origin:50% 100%;animation:sway 6s ease-in-out infinite alternate}
+.flock{animation:glide 34s ease-in-out infinite alternate}
+.tw{animation:tw 7s ease-in-out infinite alternate}
+.tw2{animation:tw 11s ease-in-out infinite alternate}
+@keyframes drift1{to{transform:translateX(-600px)}}
+@keyframes drift2{to{transform:translateX(-800px)}}
+@keyframes drift3{to{transform:translateX(-1040px)}}
+@keyframes bob{to{transform:translateY(7px)}}
+@keyframes ride{to{transform:translateY(28px)}}
+@keyframes swash{to{transform:translateY(12px);opacity:.45}}
+@keyframes sway{from{transform:rotate(-2deg)}to{transform:rotate(3deg)}}
+@keyframes glide{to{transform:translate(90px,-14px)}}
+@keyframes glow{to{opacity:1}}
+@keyframes glint{to{opacity:0.22}}
+@keyframes tw{to{opacity:.25}}
+</style>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="sky1"/><stop offset="0.6" class="sky2"/><stop offset="1" class="sky3"/></linearGradient>
+<radialGradient id="halo"><stop offset="0.3" class="h1"/><stop offset="1" class="h2"/></radialGradient></defs>
+<!-- sky -->
+<rect x="0" y="0" width="1600" height="570" fill="url(#sky)"/>
+
+<circle class="glow" cx="300" cy="230" r="170" fill="url(#halo)"/>
+<circle class="orb" cx="300" cy="230" r="64"/>
+<g transform="translate(560 190)"><g class="flock"><path class="gull" d="M-14 0Q-7 -8 0 0Q7 -8 14 0"/><path class="gull" d="M30 22Q36 15 42 22Q48 15 54 22"/></g></g>
+<!-- sea -->
+<rect class="sea" x="0" y="560" width="1600" height="440"/>
+<rect class="glint" x="255" y="572" width="90" height="4" rx="2"/><rect class="glint" x="272" y="588" width="56" height="4" rx="2"/><rect class="glint" x="240" y="604" width="120" height="4" rx="2"/><rect class="glint" x="280" y="618" width="44" height="4" rx="2"/>
+<g class="b1"><path class="w1 d1" d="M0 625 Q75 611 150 625 T300 625 T450 625 T600 625 T750 625 T900 625 T1050 625 T1200 625 T1350 625 T1500 625 T1650 625 T1800 625 T1950 625 T2100 625 T2250 625 T2400 625 L2500 1000 L0 1000 Z"/></g>
+<g><path class="w2 d2" d="M0 700 Q100 672 200 700 T400 700 T600 700 T800 700 T1000 700 T1200 700 T1400 700 T1600 700 T1800 700 T2000 700 T2200 700 T2400 700 T2600 700 T2800 700 L2800 1000 L0 1000 Z"/><path class="foam thin d2" d="M0 700 Q100 672 200 700 T400 700 T600 700 T800 700 T1000 700 T1200 700 T1400 700 T1600 700 T1800 700 T2000 700 T2200 700 T2400 700 T2600 700 T2800 700"/><g transform="translate(1300 684)"><g class="ride"><g transform="scale(-1.35 1.35)">
+<path class="board" d="M-36 0Q-30 -6 0 -6Q30 -6 40 -1Q30 4 0 4Q-30 4 -36 0Z"/>
+<path class="limb" d="M-13 -6L-9 -17L-1 -27M12 -6L9 -17L1 -27M0 -27L5 -45M4 -43L-9 -38L-22 -41M4 -43L17 -40L28 -33"/>
+<circle class="head" cx="8" cy="-53" r="6"/>
+</g></g></g></g>
+<g class="b3"><path class="w3 d3" d="M0 775 Q130 753 260 775 T520 775 T780 775 T1040 775 T1300 775 T1560 775 T1820 775 T2080 775 T2340 775 T2600 775 T2860 775 T3120 775 L3160 1000 L0 1000 Z"/><path class="foam d3" d="M0 775 Q130 753 260 775 T520 775 T780 775 T1040 775 T1300 775 T1560 775 T1820 775 T2080 775 T2340 775 T2600 775 T2860 775 T3120 775"/></g>
+<!-- beach -->
+<path class="wet" d="M0 828C300 808 560 822 820 816S1300 800 1600 808L1600 1000L0 1000Z"/>
+<g class="swash"><path class="sheet" d="M0 830C300 810 560 824 820 818S1300 802 1600 810L1600 836C1460 830 1300 842 1120 838S760 846 560 842S200 836 0 842Z"/>
+<path class="lace" d="M0 842C200 836 380 850 560 842S940 832 1120 838S1460 828 1600 836"/></g>
+<path class="sand" d="M0 868C320 846 620 862 900 856S1340 842 1600 850L1600 1000L0 1000Z"/>
+<g transform="translate(1380 915) rotate(10) scale(0.85)"><path class="planted" d="M0 0C-16 -10 -20 -80 -16 -130C-12 -165 -4 -182 0 -186C4 -182 12 -165 16 -130C20 -80 16 -10 0 0Z"/>
+<path class="stripe" d="M0 -8L0 -178"/></g>
+<ellipse class="sand" cx="1382" cy="917" rx="30" ry="8"/>
+<path class="dune" d="M0 790C120 760 250 754 360 788C450 816 520 900 560 1000L0 1000Z"/>
+<g class="sway"><path class="grass" d="M170 774q-4 -25.2 -12 -42M170 774q1 -29.4 3 -46.2M170 774q6 -21 14 -35.699999999999996"/><path class="grass" d="M230 764q-4 -32.4 -12 -54M230 764q1 -37.8 3 -59.400000000000006M230 764q6 -27 14 -45.9"/><path class="grass" d="M290 766q-4 -27.599999999999998 -12 -46M290 766q1 -32.199999999999996 3 -50.6M290 766q6 -23 14 -39.1"/><path class="grass" d="M350 782q-4 -22.8 -12 -38M350 782q1 -26.599999999999998 3 -41.800000000000004M350 782q6 -19 14 -32.3"/><path class="grass" d="M410 804q-4 -18 -12 -30M410 804q1 -21 3 -33M410 804q6 -15 14 -25.5"/></g>
+</svg>
